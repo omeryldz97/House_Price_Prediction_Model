@@ -26,12 +26,11 @@ pd.set_option("display.max_rows",None)
 pd.set_option("display.width",None)
 pd.set_option("display.float_format",lambda x:".%3f" %x)
 
-df=pd.read_csv("")
+df=pd.read_csv("...")
 df.head()
 df.columns
 df.info()
 df.shape
-#NUMERİK VE KATEGORİK DEĞİŞKENLERİN YAKALANMASI
 def grab_col_names(dataframe,cat_th=10,car_th=20):
     cat_cols=[i for i in dataframe.columns if dataframe[i].dtypes=="O"]
     num_but_cat=[i for i in dataframe.columns if dataframe[i].dtypes != "O" and dataframe[i].nunique()<cat_th]
