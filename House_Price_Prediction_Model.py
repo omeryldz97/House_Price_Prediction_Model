@@ -26,7 +26,7 @@ pd.set_option("display.max_rows",None)
 pd.set_option("display.width",None)
 pd.set_option("display.float_format",lambda x:".%3f" %x)
 
-df=pd.read_csv("datasets/house_price_prediction.csv")
+df=pd.read_csv("")
 df.head()
 df.columns
 df.info()
